@@ -1,0 +1,10 @@
+---
+- name: Delivery Spring
+  hosts: webservers
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Copy file war
+      copy: 
+        src: /opt/spring-deploy/target/spring-db-school.war
+        dest:  /usr/share/tomcat/webapps/ROOT.war
