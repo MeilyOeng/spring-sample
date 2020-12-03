@@ -6,5 +6,5 @@
   tasks:
     - name: Copy file war
       copy: 
-        src: /opt/spring-deploy/target/spring-db-school.war
+        src: /opt/spring-deploy/target/spring-sample.war
         dest:  /usr/share/tomcat/webapps/ROOT.war
