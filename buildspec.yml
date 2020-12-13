@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "pre build"
+  build:
+    commands:
+      - echo "Build"
+      - mvn clean package
+  post_build:
+    commands:
+      - echo "Post build"
+      - mv target/spring-sample ./
+artifacts:
+  files:
+    - spring-sample/**/*
+      
