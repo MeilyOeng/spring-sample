@@ -6,12 +6,12 @@ phases:
   build:
     commands:
       - echo "Build"
-      - mvn clean package
+      - mvn clean prepare-package war:exploded
   post_build:
     commands:
       - echo "Post build"
-      - mv target/spring-sample ./
+      - mv target/deploy ./
 artifacts:
   files:
-    - spring-sample/**/*
+    - deploy/**/*
       
