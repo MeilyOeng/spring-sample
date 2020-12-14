@@ -1,8 +1,11 @@
 version: 0.2
 phases:
+  install:
+    runtime-versions:
+      java: openjdk8
   pre_build:
     commands:
-      - echo "pre build"
+      - echo "pre build" 
   build:
     commands:
       - echo "Build"
