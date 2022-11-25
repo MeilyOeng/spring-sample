@@ -1,3 +1,3 @@
 FROM openjdk:11
-ADD spring-sample.war spring-sample.war
-ENTRYPOINT ["java", "-jar", "spring-sample.war"]
+ADD spring-sample.war ROOT.war
+ENTRYPOINT ["catalina.sh", "ROOT.war"]
