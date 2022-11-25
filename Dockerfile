@@ -1,3 +1,5 @@
-FROM openjdk:11
-ADD spring-sample.war ROOT.war
-ENTRYPOINT ["catalina.sh", "ROOT.war"]
+FROM tomcat:9
+
+ADD /target/spring-sample.war /usr/local/tomcat/webapps/ROOT.war
+
+ENTRYPOINT ["catalina.sh","run"]
