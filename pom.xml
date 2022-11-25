@@ -79,9 +79,9 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <!--
+  
         <finalName>spring-sample</finalName>
-        -->
+
     </build>
 
 </project>
